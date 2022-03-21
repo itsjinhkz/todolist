@@ -1,0 +1,24 @@
+.backgroundBody {
+  background: rgba(250, 134, 221, 0.781);
+  width: 100vw;
+  height: 100vh;
+}
+
+.BodyToDoListColor {
+  background: #fff;
+  font-family: "Indie Flower", cursive;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  border-radius: 10px;
+}
+
+.BodyToDoListText {
+  background-color: rgb(239, 172, 51);
+  font-size: 47px;
+  padding: 10px 20px;
+  border-radius: 20px 5px 4px 20px;
+}
+
+.WriteText {
+  font-size: 25px;
+  font-family: "Oswald", sans-serif;
+}
