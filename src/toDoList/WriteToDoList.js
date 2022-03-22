@@ -13,7 +13,7 @@ class WriteToDoList extends Component {
           {item}
           <button
             onClick={() => {
-              console.log(this.state.toDoList);
+              this.props.removeFromDoList(index);
             }}
             className="bg-success"
             style={{ borderRadius: "30px" }}
@@ -62,6 +62,12 @@ let mapDispatchToProps = (dispatch) => {
       dispatch({
         type: "addToDoList",
         payload: payload(),
+      });
+    },
+    removeFromDoList: (index) => {
+      dispatch({
+        type: "removeFromDoList",
+        payload: index,
       });
     },
   };

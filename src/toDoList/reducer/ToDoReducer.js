@@ -11,7 +11,9 @@ export let ToDoReducer = (state = ToDoState, action) => {
       return { ...state };
     }
     case "removeFromDoList": {
-      state.toDoList.splice(action.payload, 1);
+      let taskListUpdate = [...state.toDoList];
+      taskListUpdate.splice(action.payload, 1);
+      state.toDoList = taskListUpdate;
       return { ...state };
     }
     default: {
